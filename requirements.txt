@@ -1,6 +1,0 @@
-altair
-pandas
-streamlit
-pymongo[tls,srv]==4.2.0
-
- 
