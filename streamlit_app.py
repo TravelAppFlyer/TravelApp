@@ -131,7 +131,7 @@ class TravelOptions:
 
         selected_city = form.selectbox(
             'Enter Your Travel City : ',
-            ('New York','Tehran','San Francisco', 'Honolulu', 'Bankok', 'Barcelona', 'Dubai', 'Paris', 'london', 'Tel Aviv'))
+            ('New York','San Francisco', 'Bankok', 'Barcelona', 'Dubai', 'Paris', 'london', 'Tel Aviv','Honolulu'))
 
         ############################### flight budget choose ########################
 
