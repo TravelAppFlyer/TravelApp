@@ -378,6 +378,13 @@ class Hotels():
 
         global df_hotels_for_email
         global df_hotels_string
+        
+        ######################### TEST RANDOM FORM #################
+        letters = string.ascii_lowercase
+        letters_random = ''.join(random.choice(letters) for i in range(10))
+        form_random_key = 'my_form' + letters_random
+        form = st.form(key=f"{form_random_key}")
+        ############################################################
 
         df_hotels_for_email = default_empty_dataframe
 
@@ -498,6 +505,13 @@ class Restorants():
 
         global df_restorants_for_email
         global df_restorants_string
+        
+        ######################### TEST RANDOM FORM #################
+        letters = string.ascii_lowercase
+        letters_random = ''.join(random.choice(letters) for i in range(10))
+        form_random_key = 'my_form' + letters_random
+        form = st.form(key=f"{form_random_key}")
+        ############################################################
 
         df_restorants_for_email = default_empty_dataframe
 
