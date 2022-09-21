@@ -200,14 +200,25 @@ class TravelOptions:
             
             app_flights = Process(Flights().find_flight(selected_city))
             app_hotels = Process(Hotels().find_hotels(selected_city))
-            app_restorants = Process(Restorants().find_restorants(selected_city))
+            try:
+                app_restorants = Process(Restorants().find_restorants(selected_city))
+            except Exception:
+                None
+                
 
             app_flights.start()
             app_hotels.start()
-            app_restorants.start()
+            try:
+                app_restorants.start()
+            except Exception:
+                None
+                
             app_flights.join()
             app_hotels.join()
-            app_restorants.join()
+            try:
+                app_restorants.join()
+            except Exception:
+                None
             
             time.sleep(5)
 
