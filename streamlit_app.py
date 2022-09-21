@@ -203,7 +203,12 @@ class TravelOptions:
             try:
                 app_restorants = Process(Restorants().find_restorants(selected_city))
             except Exception:
-                None
+                df = pd.DataFrame(
+                    np.random.randn(1000, 2) / [50, 50] + [40.69, -74],
+                    columns=['lat', 'lon'])
+
+                st.map(df)
+                
                 
 
             app_flights.start()
