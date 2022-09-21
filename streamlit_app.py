@@ -19,7 +19,6 @@ from email.message import EmailMessage
 import ssl
 import smtplib
 import string
-import seaborn as sns
 from matplotlib import pyplot
 from pretty_html_table import build_table
 from smtplib import SMTP
