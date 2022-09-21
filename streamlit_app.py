@@ -271,6 +271,13 @@ class Flights():
         global df_airports_string
 
         global df_airports_for_email
+        
+        ######################### TEST RANDOM FORM #################
+        letters = string.ascii_lowercase
+        letters_random = ''.join(random.choice(letters) for i in range(10))
+        form_random_key = 'my_form' + letters_random
+        form = st.form(key=f"{form_random_key}")
+        ############################################################
 
         df_airports_for_email = default_empty_dataframe
 
