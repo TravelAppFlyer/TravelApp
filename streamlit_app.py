@@ -300,7 +300,10 @@ class Flights():
         # print(city)
         url = "https://travel-advisor.p.rapidapi.com/airports/search"
 
-        uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.frf1eeg.mongodb.net/?retryWrites=true&w=majority'
+        #uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.frf1eeg.mongodb.net/?retryWrites=true&w=majority'
+        
+        uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.edrso6r.mongodb.net/test'
+        
         myclient = pymongo.MongoClient(uri)
         mydb = myclient["travel_app"]
         mycol = mydb["Flights"]
