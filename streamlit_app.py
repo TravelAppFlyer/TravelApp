@@ -300,7 +300,9 @@ class Flights():
         # print(city)
         url = "https://travel-advisor.p.rapidapi.com/airports/search"
 
-        uri = 'mongodb+srv://tsafrir:TgbYhn12@cluster0.edrso6r.mongodb.net/?retryWrites=true&w=majority'
+        #uri = 'mongodb+srv://tsafrir:TgbYhn12@cluster0.edrso6r.mongodb.net/?retryWrites=true&w=majority'
+        
+        uri = 'mongodb+srv://tsafrir:TgbYhn12@cluster0.7c0gpqf.mongodb.net/?retryWrites=true&w=majority'
         
         #uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.edrso6r.mongodb.net/travel_app'
         
@@ -416,7 +418,8 @@ class Hotels():
 
         url = "https://travel-advisor.p.rapidapi.com/airports/search"
 
-        uri = 'mongodb+srv://tsafrir:TgbYhn12@cluster0.edrso6r.mongodb.net/?retryWrites=true&w=majority'
+        uri = 'mongodb+srv://tsafrir:TgbYhn12@cluster0.7c0gpqf.mongodb.net/?retryWrites=true&w=majority'
+        
         myclient = pymongo.MongoClient(uri)
         mydb = myclient["travel_app"]
         mycol = mydb["Hotels"]
@@ -542,7 +545,9 @@ class Restorants():
             city = "1465497"
 
         #uri = 'mongodb+srv://tsafrir:TgbYhn12@cluster0.frf1eeg.mongodb.net/?retryWrites=true&w=majority'
-        uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.edrso6r.mongodb.net/?retryWrites=true&w=majority'
+        
+        uri = 'mongodb+srv://tsafrir:TgbYhn12@cluster0.7c0gpqf.mongodb.net/?retryWrites=true&w=majority'
+        
         myclient = pymongo.MongoClient(uri)
         mydb = myclient["travel_app"]
         mycol = mydb["Restorants"]
