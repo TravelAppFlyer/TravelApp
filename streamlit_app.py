@@ -302,7 +302,7 @@ class Flights():
 
         #uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.frf1eeg.mongodb.net/?retryWrites=true&w=majority'
         
-        uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.edrso6r.mongodb.net/test'
+        uri = 'mongodb+srv://tsafrir:tsafrir@cluster0.edrso6r.mongodb.net/travel_app'
         
         myclient = pymongo.MongoClient(uri)
         mydb = myclient["travel_app"]
